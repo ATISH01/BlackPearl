@@ -32,13 +32,14 @@
     "id": "5",
     "name": "Joshamne Gibbs",
     "ratings": 4,
-    "img": "I am the Chif crew of this Ship.I love this Ship.I always want to work in it"
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3n2IH0P1Fuv3arkKzP_7ZS013-rPZ2mQng&usqp=CAU",
+    "review":"I am the Chif crew of this Ship.I love this Ship.I always want to work in it"
   },
   {
     "id": "6",
     "name": "James Norrington",
     "ratings": 3,
-    "img": "",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEzcGOw1ixgcnWsMVWd9W0_9K-4LBsqsdeA&usqp=CAU",
     "review":"This is fastest Ship in the world.Our ship never defeat this ship"
   }
 ]
