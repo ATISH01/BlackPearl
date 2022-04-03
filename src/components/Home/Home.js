@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import useReview from '../../DataHook/DataHook';
 import Review from '../Review/Review';
 
 const Home = () => {
     const [reviews,setReviews]=useReview([]);
-    /* const [firstThree,setFirstThree]=useState([]);
-    const Three = reviews.slice(0,3);
-    if(reviews.length===6){
-        setFirstThree(Three)
-    }
-     */
-    
     return (
         <div>
             <div className='row'>
