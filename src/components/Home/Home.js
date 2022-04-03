@@ -5,6 +5,12 @@ import Review from '../Review/Review';
 
 const Home = () => {
     const [reviews,setReviews]=useReview([]);
+    /* const [firstThree,setFirstThree]=useState([]);
+    const Three = reviews.slice(0,3);
+    if(reviews.length===6){
+        setFirstThree(Three)
+    }
+     */
     
     return (
         <div>
@@ -21,10 +27,11 @@ const Home = () => {
         
                     <Link to="/review"><button type="button" class="btn btn-secondary fs-5 w-25 mt-5">Reviews</button></Link>
             </div>
+            
             <div className="p-3 row row-cols-1 row-cols-md-3 g-4">
               
                 {
-                    reviews.map(review=><Review review={review}></Review>)
+                    reviews.slice(0,3).map(review=><Review review={review}></Review>)
                 }
             </div>
         </div>
