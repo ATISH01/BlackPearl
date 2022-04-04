@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid">
-                    <a className="navbar-brand">Navbar</a>
+                    <a className="navbar-brand">Pearl</a>
                     <form class="d-flex">
                         <div className='nav fs-5'>
                             <Link to="/">Home</Link>
