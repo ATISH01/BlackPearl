@@ -1,20 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'
+import './Header.css';
+import ActiveLink from '../ActiveLink/ActiveLink'
+
 
 const Header = () => {
     return (
-        <div>
-            <nav class="navbar navbar-light bg-light">
+        <div className='header'>
+            <nav class="navbar navbar-light">
                 <div class="container-fluid">
-                    <a className="navbar-brand">Pearl</a>
+                    <a className="navbar-brand "><span className='font'>Pearl</span></a>
                     <form class="d-flex">
                         <div className='nav fs-5'>
-                            <Link to="/">Home</Link>
-                            <Link to="/review">Reviews</Link>
-                            <Link to="/dashboard">Dashboard</Link>
-                            <Link to="blogs">Blogs</Link>
-                            <Link to="about">About</Link>
+                            
+                     
+                            <ActiveLink to="/">Home</ActiveLink>
+                      
+                            <ActiveLink to="/review">Reviews</ActiveLink>
+                            <ActiveLink to="/dashboard">Dashboard</ActiveLink>
+                      
+                            <ActiveLink to="blogs">Blogs</ActiveLink>
+                            <ActiveLink to="about">About </ActiveLink>
+                        
                         </div>
                     </form>
                 </div>

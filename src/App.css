@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,500;1,600&family=Dongle&family=Fredoka&family=Oswald&family=Poppins&family=Seaweed+Script&family=Shizuru&display=swap');
 .App {
   text-align: center;
+  background-color: #cce1f6;
 }
 
 .App-logo {

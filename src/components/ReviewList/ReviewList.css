@@ -1,0 +1,12 @@
+/* .margin{
+    margin-left: 70px;
+} */
+.margin {
+    margin:0px !important;
+}
+.width img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
