@@ -1,9 +1,9 @@
 import { Tooltip } from 'bootstrap';
 import React from 'react';
-import { Line, LineChart, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 const DashBoard = () => {
-   const data= [
+    const data = [
         {
             "month": "Mar",
             "investment": 100000,
@@ -42,12 +42,22 @@ const DashBoard = () => {
         }
     ]
     return (
-        <LineChart width={400} height={500} data={data}>
-            <Line dataKey={'investment'}></Line>
-            <XAxis dataKey={"month"}></XAxis>
-            <YAxis></YAxis>
-           
-        </LineChart>
+        <div className='p-3  row'>
+            <div className='col-md-6'>
+                <LineChart width={400} height={500} data={data}>
+                    <Line dataKey={'investment'}></Line>
+                    <XAxis dataKey={"month"}></XAxis>
+                    <YAxis></YAxis>
+                </LineChart>
+            </div>
+            <div className='col-md-6'>
+                <BarChart width={450} height={540} data={data}>
+                    <Bar dataKey={"sell"} fill="#8884d8" />
+                    <XAxis></XAxis>
+                    <YAxis></YAxis>
+                </BarChart>
+            </div>
+        </div>
     );
 };
 
