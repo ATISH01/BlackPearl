@@ -1,0 +1,17 @@
+.blogs{
+    padding: 6%;
+}
+.blogs h2{
+    margin-top: 10px;
+        margin-bottom: 12px;
+}
+.blogs h4{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.blogs p{
+    border:2px solid black;
+    width: 70%;
+    margin: auto;
+    
+}
