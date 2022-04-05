@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Header.css';
 import ActiveLink from '../ActiveLink/ActiveLink'
 
@@ -19,8 +18,8 @@ const Header = () => {
                             <ActiveLink to="/review">Reviews</ActiveLink>
                             <ActiveLink to="/dashboard">Dashboard</ActiveLink>
                       
-                            <ActiveLink to="blogs">Blogs</ActiveLink>
-                            <ActiveLink to="about">About </ActiveLink>
+                            <ActiveLink to="/blogs">Blogs</ActiveLink>
+                            <ActiveLink to="/about">About </ActiveLink>
                         
                         </div>
                     </form>
