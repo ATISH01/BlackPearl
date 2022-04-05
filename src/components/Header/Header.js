@@ -7,10 +7,10 @@ import ActiveLink from '../ActiveLink/ActiveLink'
 const Header = () => {
     return (
         <div className='header'>
-            <nav class="navbar navbar-light">
-                <div class="container-fluid">
+            <nav className="navbar navbar-light">
+                <div className="container-fluid">
                     <a className="navbar-brand "><span className='font'>Pearl</span></a>
-                    <form class="d-flex">
+                    <form className="d-flex">
                         <div className='nav fs-5'>
                             
                      

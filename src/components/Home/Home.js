@@ -15,7 +15,7 @@ const Home = () => {
             It's not just a keel and a hull and a deck and sails.There is a story behind each things in the ship. <br /> If it's alive it can tell story of All.Every part of the ship witness of the incidents of victory and defeat.</p>
         </div>
         <div className='col-md-5 img-fluid ship-img'>
-          <img className='img-fluid' src={"https://ae01.alicdn.com/kf/HTB1Ao39JpXXXXX4XFXXq6xXFXXXo/221108177/HTB1Ao39JpXXXXX4XFXXq6xXFXXXo.jpg?size=91222&height=810&width=640&hash=0f686c4e570d2ec7d8f11a6429a4dede"} alt="" />
+          <img  src={"https://ae01.alicdn.com/kf/HTB1Ao39JpXXXXX4XFXXq6xXFXXXo/221108177/HTB1Ao39JpXXXXX4XFXXq6xXFXXXo.jpg?size=91222&height=810&width=640&hash=0f686c4e570d2ec7d8f11a6429a4dede"} alt="" />
         </div>
       </div>
       <h1 className='mt-3'>Customers Reviews</h1>

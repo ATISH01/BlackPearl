@@ -8,7 +8,7 @@ import './ReviewList.css'
 const ReviewList = (props) => {
     const { name, img, review, ratings } = props.reviewList;
     return (
-        <div className='margin'>
+        <div className='margin mt-3'>
             <div className="col p-3">
                 <div className="card width">
                     <div class="card-body">
@@ -22,7 +22,7 @@ const ReviewList = (props) => {
                             readonly
                         ></Rating>
                     </div>
-                    <img className='p-3 rounded ' src={img} class="card-img-top" alt="..." />
+                    <img className='p-3 mx-auto' src={img}  alt="..." />
 
                 </div>
 

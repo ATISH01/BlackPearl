@@ -1,6 +1,6 @@
-import { Tooltip } from 'bootstrap';
+
 import React from 'react';
-import { Bar, BarChart, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Line, LineChart, Pie, PieChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend, AreaChart, CartesianGrid, Area } from 'recharts';
 
 const DashBoard = () => {
     const data = [
@@ -42,20 +42,61 @@ const DashBoard = () => {
         }
     ]
     return (
-        <div className='p-3  row'>
-            <div className='col-md-6'>
-                <LineChart width={400} height={500} data={data}>
+        <div class="container overflow-hidden mt-4">
+            <div class="row gy-2">
+                <div class="col-md-6">
+                    <div class="p-3">
+                    <LineChart width={400} height={400} data={data}>
                     <Line dataKey={'investment'}></Line>
                     <XAxis dataKey={"month"}></XAxis>
                     <YAxis></YAxis>
+                    <Legend />
                 </LineChart>
-            </div>
-            <div className='col-md-6'>
-                <BarChart width={450} height={540} data={data}>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3">
+                    <AreaChart
+                        width={400}
+                        height={400}
+                        data={data}
+                        margin={{
+                            top: 10,
+                            right: 30,
+                            left: 0,
+                            bottom: 0,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                        <Area type="monotone" dataKey="revenue" stroke="#8884d8" fill="#8884d8" />
+                        <Area type="monotone" dataKey="investment" stroke="#8884d8" fill="#82ca9d" />
+                        <Legend />
+                    </AreaChart>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3">
+                    <BarChart width={450} height={540} data={data}>
                     <Bar dataKey={"sell"} fill="#8884d8" />
-                    <XAxis></XAxis>
+                    <XAxis dataKey={"sell"}></XAxis>
                     <YAxis></YAxis>
+                    <Legend />
                 </BarChart>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3">
+                    <PieChart width={400} height={400}>
+                    <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+                    <Pie data={data} dataKey="sell" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                    <Tooltip />
+                    <Legend />
+                </PieChart>
+                    </div>
+                </div>
             </div>
         </div>
     );

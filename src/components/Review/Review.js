@@ -8,8 +8,8 @@ const Review = (props) => {
     const { name, img, review, ratings } = props.review;
     return (
         <div>
-            <h1>{props.review.length}</h1>
-            <div className="col">
+            
+            <div className="col mt-3">
                 <div className="card w-75 mx-auto width">
                     <div class="card-body">
                         <h5 class="card-title">Name:{name}</h5>
@@ -22,7 +22,7 @@ const Review = (props) => {
                             readonly
                         ></Rating>
                     </div>
-                    <img className='p-3 rounded' src={img} class="card-img-top" alt="..." />
+                    <img className='p-3 mx-auto' src={img}  alt="..." />
 
                 </div>
 
